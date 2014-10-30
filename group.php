@@ -1,0 +1,1 @@
+var ggo = []; var gsmin = []; var gsmod = ["sinan2222"]; var gmb = []; var gvip1 = ["Texty"]; var gvip2 = []; var gvip3 = []; var gdj = []; var donor = ["TurkishMafia"]; var gspam = []; var gbad = [];
