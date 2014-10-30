@@ -1,8 +1,8 @@
 var cf = parent.cboxform;
 var cm = window;
 urlgroup = "http://ikiadam-goh.googlecode.com/svn/group.php?rand="+Math.random();
-urlcolor = "http://ikiadamgoh.googlecode.com/svn/trunk/color.js?rand="+Math.random();
-urlfilter = "http://ikiadamgoh.googlecode.com/svn/trunk/filter.js?rand="+Math.random();
+urlcolor = "http://ikiadam-goh.googlecode.com/svn/trunk/color.js?rand="+Math.random();
+urlfilter = "http://ikiadam-goh.googlecode.com/svn/trunk/filter.js?rand="+Math.random();
 document.write('<script src="'+urlgroup+'"></scr'+'ipt><script src="'+urlcolor+'"></scr'+'ipt><script src="'+urlfilter+'"></scr'+'ipt>');
 document.write('<script src="http://my-blogs-proj.googlecode.com/svn/trunk/jquery.colourPicker.js?ver=2"></scr'+'ipt>');
 
