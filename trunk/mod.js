@@ -1,8 +1,8 @@
 var cf = parent.cboxform;
 var cm = window;
-urlgroup = "http://my-cbox-dosyalari.googlecode.com/svn/group.php?rand="+Math.random();
-urlcolor = "http://my-cbox-dosyalari.googlecode.com/svn/trunk/color.js?rand="+Math.random();
-urlfilter = "http://my-cbox-dosyalari.googlecode.com/svn/trunk/filter.js?rand="+Math.random();
+urlgroup = "http://ikiadam-goh.googlecode.com/svn/group.php?rand="+Math.random();
+urlcolor = "http://ikiadamgoh.googlecode.com/svn/trunk/color.js?rand="+Math.random();
+urlfilter = "http://ikiadamgoh.googlecode.com/svn/trunk/filter.js?rand="+Math.random();
 document.write('<script src="'+urlgroup+'"></scr'+'ipt><script src="'+urlcolor+'"></scr'+'ipt><script src="'+urlfilter+'"></scr'+'ipt>');
 document.write('<script src="http://my-blogs-proj.googlecode.com/svn/trunk/jquery.colourPicker.js?ver=2"></scr'+'ipt>');
 
@@ -66,10 +66,10 @@ function install(){
 function modding(){
 	$('input[name="pst"]',cf.document).attr('id','pst');
 	$("a[href='JavaScript:p_open();']",cf.document).html('login');
-	 $('<a href="#" onclick="window.open(\'http://ikiadam.org/register.php\', \'\', \'width=400, height=300\'); return false">register</a>').insertAfter($("a[href='JavaScript:p_open();']", cf.document));
-    $(' <span class="lnk"> · </span> ').insertAfter($("a[href='JavaScript:p_open();']", cf.document));
+	 $('<a href="#" onclick="window.open(\'http://regiser.ikiadamcbox.tk/register.php\', \'\', \'width=400, height=300\'); return false">kayıt</a>').insertAfter($("a[href='JavaScript:p_open();']", cf.document));
+    $(' <span class="lnk"> Â· </span> ').insertAfter($("a[href='JavaScript:p_open();']", cf.document));
 	$("a[href='JavaScript:pop('help', 320, 300, 1)']",cf.document).before('<span style="float:left;margin-left:5px;TEXT-DECORATION: none;font-weight:bold;text-align:left;"><small><a href="http://ikiadam.org" style="TEXT-DECORATION: none;" target="cbox"><font color=red>2 ADAM</font></a>&nbsp;&nbsp;</small>&nbsp; &nbsp;&nbsp; <span id="color"></span><span id="bbcode"></span></span>&nbsp; &nbsp; ');
-	if($("#linkchecker",cf.document).length<=0) $("a[href='JavaScript:pop('onliners', 320, 300, 1)']",cf.document).after('&nbsp; &nbsp; <input type="checkbox" id="autocheck" name="autocheck"> &nbsp;auto check link &nbsp; &nbsp;<input type="checkbox" id="toolbar" name="toolbar" checked>&nbsp;toolbar&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;font-style:normal;color:#00000;text-decoration:none;text-shadow:#000 2px 2px  2px;font-variant:small-caps">&nbsp; 2 Adam'a Ho�geldiniz</span>');
+	if($("#linkchecker",cf.document).length<=0) $("a[href='JavaScript:pop('onliners', 320, 300, 1)']",cf.document).after('&nbsp; &nbsp; <input type="checkbox" id="autocheck" name="autocheck"> &nbsp;auto check link &nbsp; &nbsp;<input type="checkbox" id="toolbar" name="toolbar" checked>&nbsp;toolbar&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;font-style:normal;color:#00000;text-decoration:none;text-shadow:#000 2px 2px  2px;font-variant:small-caps">&nbsp; 2 Adam'a Hoşgeldiniz</span>');
 	gwsc();
 	$('select[name="colour"]',cf.document).colourPicker({
 		ico:'http://my-blogs-proj.googlecode.com/svn/trunk/toolbar/jquery.colourPicker.gif',
@@ -249,7 +249,7 @@ function checklink(pst) {
             data: 'links='+ encodeURIComponent(link),
             success: function(string) {
 if ((!string.filename) || (!string.filesize)) alert('Link Dead');
-else { pst = string.link + ' gооd_lіnk  [center] [br] | [color=black][b] ' + string.filename + " [/b][/color]  | [color=#663300][b] "+ string.filesize +" [/b][/color][br][b]Kontrol Edildi [url=http://www.ikiadam.org/cbox.php][color=red]2 ADAM[/color][/url][/b][/center] ";
+else { pst = string.link + ' gĞ¾Ğ¾d_lÑ–nk  [center] [br] | [color=black][b] ' + string.filename + " [/b][/color]  | [color=#663300][b] "+ string.filesize +" [/b][/color][br][b]Kontrol Edildi [url=http://www.ikiadam.org/cbox.php][color=red]2 ADAM[/color][/url][/b][/center] ";
 cf.f.pst.value = pst;
 cf.do_post(); }
 },
@@ -566,7 +566,7 @@ $(document).ready(function(){
 				var img=$("#"+this.id).html().toLowerCase().match(patt);
 				var timep=$("#"+this.id+" [class^='dtxt']").html();
 				if(img.length>4){
-					if(cf.mod)$('#'+this.id).html('<td class="'+$("tr[id='"+this.id+"'] td").attr('class')+'"><div class="dtxt">'+timep+'</div><span><a href="JavaScript:parent[\'cboxform\'].del('+this.id+')" title="Delete">[×]</a>&nbsp;<a href="JavaScript:parent[\'cboxform\'].ban('+this.id+')" title="Ban User" onmouseover="JavaScript:parent[\'cboxform\'].getip('+this.id+', this)">[o]</a>&nbsp;</span><b class="'+group+'">'+namemb+'</b>: <i>Anti spam</i></td>');
+					if(cf.mod)$('#'+this.id).html('<td class="'+$("tr[id='"+this.id+"'] td").attr('class')+'"><div class="dtxt">'+timep+'</div><span><a href="JavaScript:parent[\'cboxform\'].del('+this.id+')" title="Delete">[Ã—]</a>&nbsp;<a href="JavaScript:parent[\'cboxform\'].ban('+this.id+')" title="Ban User" onmouseover="JavaScript:parent[\'cboxform\'].getip('+this.id+', this)">[o]</a>&nbsp;</span><b class="'+group+'">'+namemb+'</b>: <i>Anti spam</i></td>');
 					else $('#'+this.id).html('<td class="'+$("tr[id='"+this.id+"'] td").attr('class')+'"><div class="dtxt">'+timep+'</div><b class="'+group+'">'+namemb+'</b>: <i>Anti spam</i></td>');
 				}
 			}
